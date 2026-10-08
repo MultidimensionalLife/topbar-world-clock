@@ -41,7 +41,12 @@ class ClockMenuItem extends PopupMenu.PopupBaseMenuItem {
         super._init({reactive: false, style_class: 'world-clock-row'});
         this._clock = clock;
 
-        const text = new St.BoxLayout({vertical: true, x_expand: true, y_align: Clutter.ActorAlign.CENTER});
+        const text = new St.BoxLayout({x_expand: true, y_align: Clutter.ActorAlign.CENTER});
+        // St.BoxLayout:vertical is deprecated since GNOME 48; orientation doesn't exist before it
+        if ('orientation' in text)
+            text.orientation = Clutter.Orientation.VERTICAL;
+        else
+            text.vertical = true;
         text.add_child(new St.Label({text: clock.label, style_class: 'world-clock-name'}));
         this._detail = new St.Label({style_class: 'world-clock-detail', opacity: DIM_OPACITY});
         text.add_child(this._detail);
