@@ -1,0 +1,29 @@
+.world-clock-panel {
+  spacing: 12px;
+}
+
+.world-clock-panel-clock {
+  spacing: 5px;
+}
+
+.world-clock-panel-time,
+.world-clock-time {
+  font-feature-settings: "tnum";
+}
+
+.world-clock-row {
+  min-width: 260px;
+  spacing: 24px;
+}
+
+.world-clock-name {
+  font-weight: bold;
+}
+
+.world-clock-detail {
+  font-size: 0.85em;
+}
+
+.world-clock-time {
+  font-size: 1.4em;
+}

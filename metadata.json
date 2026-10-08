@@ -1,0 +1,9 @@
+{
+  "uuid": "topbar-world-clock@steerch.com",
+  "name": "Top Bar World Clock",
+  "description": "Show the time in multiple timezones in the top bar. Add as many clocks as you like and pick which ones appear in the bar; all of them are listed in the menu.",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "settings-schema": "org.gnome.shell.extensions.topbar-world-clock",
+  "version": 1,
+  "url": "https://github.com/MultidimensionalLife/topbar-world-clock"
+}

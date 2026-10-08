@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.topbar-world-clock"
+          path="/org/gnome/shell/extensions/topbar-world-clock/">
+    <key name="clocks" type="a(ssb)">
+      <default>[('America/New_York', 'New York', true), ('Europe/London', 'London', false), ('Asia/Tokyo', 'Tokyo', true)]</default>
+      <summary>Clocks</summary>
+      <description>List of (timezone identifier, label, show in top bar)</description>
+    </key>
+    <key name="time-format" type="s">
+      <choices>
+        <choice value="system"/>
+        <choice value="12h"/>
+        <choice value="24h"/>
+      </choices>
+      <default>'system'</default>
+      <summary>Time format</summary>
+    </key>
+    <key name="show-seconds" type="b">
+      <default>false</default>
+      <summary>Show seconds</summary>
+    </key>
+    <key name="show-labels" type="b">
+      <default>true</default>
+      <summary>Show clock labels in the top bar</summary>
+    </key>
+    <key name="position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>'center'</default>
+      <summary>Top bar box</summary>
+    </key>
+  </schema>
+</schemalist>
